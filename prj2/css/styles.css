@@ -1,0 +1,146 @@
+/* Reset styles for consistent layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f8f9fa;
+}
+
+/* Header styling */
+.header {
+  background: #007bff;
+  color: #fff;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Active state styling */
+.menu-link.active {
+  color: #f8f9fa;
+  text-decoration: underline;
+}
+
+.menu-link:hover {
+  color: #f8f9fa;
+}
+
+/* Hero section styling */
+.hero {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: #fff;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: #fff;
+  color: #007bff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+/* Section styling */
+.section {
+  padding: 4rem 1rem;
+  text-align: center;
+  background: #f8f9fa;
+}
+
+.section:nth-child(even) {
+  background: #e9ecef;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.service {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer styling */
+.footer {
+  background: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.875rem;
+}
+
+/* Smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
